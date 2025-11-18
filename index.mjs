@@ -29,55 +29,55 @@ app.get('/nasa', async(req, res) => { // NASA Picture of the Day
 // Planet views
 app.get('/mercury', (req, res) => { // Mercury
     let planetMercury = planets.getMercury();
-    // console.log(planetMercury);
+    console.log(planetMercury);
     res.render("mercury", {planetMercury});
 });
 
 app.get('/venus', (req, res) => { // Venus
     let planetVenus = planets.getVenus();
-    // console.log(planetVenus);
+    console.log(planetVenus);
     res.render("venus", {planetVenus});
 });
 
 app.get('/earth', (req, res) => { // Earth
     let planetEarth = planets.getEarth();
-    // console.log(planetEarth);
+    console.log(planetEarth);
     res.render("earth", {planetEarth});
 });
 
 app.get('/mars', (req, res) => { // Mars
     let planetMars = planets.getMars();
-    // console.log(planetMars);
+    onsole.log(planetMars);
     res.render("mars", {planetMars});
 });
 
 app.get('/jupiter', (req, res) => { // Jupiter
     let planetJupiter = planets.getJupiter();
-    // console.log(planetJupiter);
+    console.log(planetJupiter);
     res.render("jupiter", {planetJupiter});
 });
 
 app.get('/saturn', (req, res) => { // Saturn
     let planetSaturn = planets.getSaturn();
-    // console.log(planetSaturn);
+    console.log(planetSaturn);
     res.render("saturn", {planetSaturn});
 });
 
 app.get('/uranus', (req, res) => { // Uranus
     let planetUranus = planets.getUranus();
-    // console.log(planetUranus);
+    console.log(planetUranus);
     res.render("uranus", {planetUranus});
 });
 
 app.get('/neptune', (req, res) => { // Neptune
     let planetNeptune = planets.getNeptune();
-    // console.log(planetNeptune);
+    console.log(planetNeptune);
     res.render("neptune", {planetNeptune});
 });
 
 app.get('/pluto', (req, res) => { // Pluto
     let planetPluto = planets.getPluto();
-    // console.log(planetPluto);
+    console.log(planetPluto);
     res.render("pluto", {planetPluto});
 });
 
