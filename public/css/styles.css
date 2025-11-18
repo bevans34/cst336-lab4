@@ -1,0 +1,44 @@
+/* Reused from hw1 to make navbar better */
+a {
+    text-decoration: none; /* removes underline */
+}
+
+nav a { /* styles within navigation bar */
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none; /* removes underline */
+    color: white; /* by default links are blue. lets make it white for more readability on a dark background */
+}
+
+nav a:hover { /* pseudo class */
+    color: yellow;
+}
+
+/* Add active class to make current page on nav bar stand out (W3schools was helpful for this) */
+.active {
+    color: yellow;
+}
+
+/* Special styles used to force change colors and fix footer to bottom of page */
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #CBE2F6;
+    text-align: center;
+    min-height: 100%;
+    position: relative;
+}
+
+h1, footer {
+    color: white;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+

@@ -1,0 +1,22 @@
+<%- include("partials/head.ejs") %>
+    <div class="bg-black">
+        <h1>The Solar System</h1>
+        <nav>
+            <a href="/"> Home </a> 
+            <a class="active" href="/nasa"> NASA PoD </a>
+            <a href="/mercury"> Mercury </a>
+            <a href="/venus"> Venus </a>
+            <a href="/earth"> Earth </a>
+            <a href="/mars"> Mars </a>
+            <a href="/jupiter"> Jupiter </a>
+            <a href="/saturn"> Saturn </a>
+            <a href="/uranus"> Uranus </a>
+            <a href="/neptune"> Neptune </a>
+            <a href="/pluto"> Pluto </a>
+        </nav>
+    </div>
+    <br>
+    Explanation: <%= podData.explanation %>
+    <br><br>
+    <img src="<%= podData.url %>"><br>
+<%- include("partials/foot.ejs") %>

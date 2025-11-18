@@ -1,0 +1,34 @@
+<%- include("partials/head.ejs") %>
+    <div class="bg-black">
+        <h1>The Solar System</h1>
+        <nav>
+            <a href="/"> Home </a> 
+            <a href="/nasa"> NASA PoD </a>
+            <a href="/mercury"> Mercury </a>
+            <a class="active" href="/venus"> Venus </a>
+            <a href="/earth"> Earth </a>
+            <a href="/mars"> Mars </a>
+            <a href="/jupiter"> Jupiter </a>
+            <a href="/saturn"> Saturn </a>
+            <a href="/uranus"> Uranus </a>
+            <a href="/neptune"> Neptune </a>
+            <a href="/pluto"> Pluto </a>
+        </nav>
+    </div>
+    <br>
+    Distance from Sun: <%= planetVenus.distanceFromSun %>
+    <br>
+    Year Length: <%= planetVenus.yearLength %>
+    <br>
+    Planet Description: <%= planetVenus.description %>
+    <br>
+    Planet Radius: <%= planetVenus.radius %>
+    <br>
+    Planet Link: <a href="<%- planetVenus.websiteLink %>"><%- planetVenus.websiteLink %></a>
+    <br>
+    One Earth Day: <%= planetVenus.oneEarthDay %>
+    <br>
+    Moons: <%= planetVenus.moons %>
+    <br>
+    <img src="<%= planetVenus.image %>"><br>
+<%- include("partials/foot.ejs") %>
